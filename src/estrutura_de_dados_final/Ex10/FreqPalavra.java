@@ -9,9 +9,9 @@ public class FreqPalavra {
     private String palavra;
     private int frequencia;
 
-    public FreqPalavra(String palavra, int frequencia) {
+    public FreqPalavra(String palavra) {
         this.palavra = palavra;
-        this.frequencia = frequencia;
+        this.frequencia = 1;
     }
 
     public String getPalavra() {
@@ -29,9 +29,14 @@ public class FreqPalavra {
     public void setFrequencia(int frequencia) {
         this.frequencia = frequencia;
     }
+    
+    public void acrecentaFrequencia() {
+        this.frequencia++;
+    }
 
-    public String print() {
-        return "palavra = " + palavra + " / frenquencia = " + frequencia;
+    @Override
+    public String toString() {
+        return "palavra = " + palavra + " \nfrenquencia = " + frequencia + "\n";
     }
 
 }

@@ -15,6 +15,10 @@ public class No {
         this.esquerda = esq;
         this.direita = dir;
     }
+    
+    public No(FreqPalavra elemento) {
+        this.elemento = elemento;
+    }
 
     public No getEsquerda() {
         return esquerda;
@@ -37,10 +41,5 @@ public class No {
     }
     public void setElemento(FreqPalavra elemento) {
        this.elemento = elemento;
-    }
-    
-    @Override
-    public String toString() {
-        return "No{" + "elemento=" + elemento + ", esq=" + esquerda + ", dir=" + direita + '}';
     }
 }
